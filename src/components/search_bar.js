@@ -10,14 +10,9 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
   render() {
     // create an input element, and pass an Event Handler as 'prop={value}'. See more props on React Docs.
-    return <input onChange={this.onInputChange} />;
+    return <input onChange={event => console.log(event.target.value)} />;
+    }
   }
-  
-  // define Event Handler. Syntax: "on" + name of element + name of event.
-  onInputChange(event) {
-    console.log(event.target.value);
-  }
-}
 
 // export/ make component available globally.
 export default SearchBar;
