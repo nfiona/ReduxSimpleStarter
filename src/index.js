@@ -6,7 +6,7 @@ import SearchBar from './components/search_bar';
 
 const API_KEY = 'AIzaSyD8hkVlfY3ZivaU1TT8h0hJPCxsl_CAXKI';
 
-// Create a new component that should produce HTML. The below is a class, written in ES6.
+// Create a new component (functional component)that should produce HTML. The below is a class, written in ES6.
 // Render imported file.
 const App = () => {
   return (
