@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <div>
         <SearchBar />
-        <VideoList videos={this.state.videos}/> {/* pass data from parent component's state */}
+        <VideoList videos={this.state.videos}/> {/* pass data from parent component's state as a prop */}
       </div>
     );
   }

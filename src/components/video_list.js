@@ -7,6 +7,7 @@ const VideoList = (props) => {
   const videoItems = props.videos.map( (video) => {
     return <VideoListItem key={video.etag} video={video} />
   })
+  
     return (
       // bootstrap class
       <ul className="col-md-4 list-group">
