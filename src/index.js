@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import YTSearch from 'youtube-api-search';
 // define full path to access a file
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
+
 const API_KEY = 'AIzaSyD8hkVlfY3ZivaU1TT8h0hJPCxsl_CAXKI';
 
 // Refactor Functional Component to Class-Based. Initialize a state.
@@ -19,11 +21,12 @@ class App extends Component {
     });
 
   }
-  
+
   render() {
     return (
       <div>
         <SearchBar />
+        <VideoList videos={this.state.videos}/> {/* pass data from parent component's state */}
       </div>
     );
   }
